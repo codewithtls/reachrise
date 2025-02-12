@@ -24,43 +24,45 @@ const heading = [
 
 export function About() {
   return (
-    <section className="container mx-auto px-4 my-20">
-      <div className="flex flex-col items-center justify-center">
-        <TypewriterEffect words={heading} />
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10"></div>
-        <TracingBeam className="px-6">
-          <div className="max-w-4xl mx-auto antialiased pt-4 relative">
-            {dummyContent.map((item, index) => (
-              <div key={`content-${index}`} className="mb-10">
-                <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-                  {item.badge}
-                </h2>
+    <>
+      <section className="container mx-auto px-4 my-20 overflow-hidden">
+        <div className="flex flex-col items-center justify-center">
+          <TypewriterEffect words={heading} />
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10"></div>
+        </div>
+        <TracingBeam className="">
+        <div className="max-w-4xl mx-auto antialiased pt-4 relative ">
+          {content.map((item, index) => (
+            <div key={`content-${index}`} className="mb-10">
+              <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+                {item.badge}
+              </h2>
 
-                <p className={twMerge("text-xl mb-4")}>{item.title}</p>
+              <p className={twMerge("text-xl mb-4")}>{item.title}</p>
 
-                <div className="text-sm  prose prose-sm dark:prose-invert">
-                  {item?.image && (
-                    <Image
-                      src={item.image}
-                      alt="blog thumbnail"
-                      height="1000"
-                      width="1000"
-                      className="rounded-lg mb-10 object-cover"
-                    />
-                  )}
-                  {item.description}
-                </div>
+              <div className="text-sm  prose prose-sm dark:prose-invert">
+                {item?.image && (
+                  <Image
+                    src={item.image}
+                    alt="blog thumbnail"
+                    height="1000"
+                    width="1000"
+                    className="rounded-lg mb-10 object-cover"
+                  />
+                )}
+                {item.description}
               </div>
-            ))}
-          </div>
-        </TracingBeam>
-      </div>
-    </section>
+            </div>
+          ))}
+        </div>
+      </TracingBeam>
+      </section>
+    </>
   );
 }
-const dummyContent = [
+const content = [
   {
-    title: "",
+    title: "About Reach Rise",
     description: (
       <>
         <p className="text-lg mb-2 text-gray-700">
@@ -85,7 +87,7 @@ const dummyContent = [
     image: "/images/mod.png",
   },
   {
-    title: "",
+    title: "Reach Rise's Vision",
     description: (
       <>
         <p className="text-lg mb-2 text-gray-700">
@@ -101,7 +103,7 @@ const dummyContent = [
     image: "/images/tbg.png",
   },
   {
-    title: "",
+    title: "Our Brands and Services",
     description: (
       <>
         <p className="text-lg mb-2 text-gray-700">
@@ -113,49 +115,49 @@ const dummyContent = [
           trends, ensuring our customers receive the best-in-class experiences.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        TLS (The japanese Language School)
+          TLS (The japanese Language School)
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Best Japanese Language School – Leading Japanese learning institute
           known for its exceptional teaching methods.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        MOD (Ministry of Daru)
+          MOD (Ministry of Daru)
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Finest Fine Dining Restaurant in Noida & Delhi NCR, with over 5,000
           happy reviews on Google, Zomato, and BookMyShow.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        TBG (The Beer Garden)
+          TBG (The Beer Garden)
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Best Rooftop Café in Delhi NCR & Noida, offering a delightful ambiance
           and 2,000+ happy reviews across platforms.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        Code with TLS
+          Code with TLS
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Premier Tech Course Provider, empowering students with in-demand
           programming and technology skills.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        CB Crown Banquet
+          CB Crown Banquet
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           The Best Banquet & Party Hall in Noida, offering premium event hosting
           and luxury celebrations.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        Hey Fairies
+          Hey Fairies
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Your go-to online store for customized mobile covers, offering unique
           and stylish designs.
         </p>
         <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
-        PromFly
+          PromFly
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           A leading Digital Marketing Agency, helping businesses grow with
