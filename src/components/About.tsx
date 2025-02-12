@@ -18,7 +18,7 @@ const heading = [
   },
   {
     text: "Reach Rise.",
-    className: "text-orange-500 dark:text-orange-500",
+    className: "text-[color:--primary-color] dark:text-[color:--primary-color]",
   },
 ];
 
@@ -112,49 +112,49 @@ const dummyContent = [
           customer expectations. To continuously evolve and adapt to industry
           trends, ensuring our customers receive the best-in-class experiences.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         TLS (The japanese Language School)
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Best Japanese Language School – Leading Japanese learning institute
           known for its exceptional teaching methods.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         MOD (Ministry of Daru)
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Finest Fine Dining Restaurant in Noida & Delhi NCR, with over 5,000
           happy reviews on Google, Zomato, and BookMyShow.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         TBG (The Beer Garden)
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Best Rooftop Café in Delhi NCR & Noida, offering a delightful ambiance
           and 2,000+ happy reviews across platforms.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         Code with TLS
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Premier Tech Course Provider, empowering students with in-demand
           programming and technology skills.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         CB Crown Banquet
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           The Best Banquet & Party Hall in Noida, offering premium event hosting
           and luxury celebrations.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         Hey Fairies
         </h1>
         <p className="text-lg mb-2 text-gray-700">
           Your go-to online store for customized mobile covers, offering unique
           and stylish designs.
         </p>
-        <h1 className="text-orange-500 text-xl mb-2 font-semibold">
+        <h1 className="text-[color:--primary-color] text-xl mb-2 font-semibold">
         PromFly
         </h1>
         <p className="text-lg mb-2 text-gray-700">

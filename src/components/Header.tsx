@@ -53,7 +53,7 @@ const Header = () => {
             {/* Logo */}
             <div>
               <Link href={"/"}>
-                <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-orange-500">
+                <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-[color:--primary-color]">
                   Reach Rise
                 </h1>
               </Link>

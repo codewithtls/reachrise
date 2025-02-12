@@ -5,6 +5,7 @@ const list=[
         description:"With its lively atmosphere and great music, it’s easy to see why it’s one of the Best Ambience Restaurants in Noida.",
         image:"/images/mod.png",
         more:"/ministry-of-daru",
+        icon:"/images/icons/mod.png",
         visit:"https://www.ministryofdaru.com/"
     },
     {
