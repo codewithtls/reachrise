@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import MobileNav from "./MobileMenu";
 import { IoIosArrowDown } from "react-icons/io";
+import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 
 const menus = [
   {
@@ -14,32 +15,62 @@ const menus = [
     link: "#",
     subMenu: [
       { name: "Team Languages", link: "/team-languages" },
-      {
-        name: "Ministry of Daru",
-        link: "/ministry-of-daru",
-      },
-      {
-        name: "The Beer Garden",
-        link: "/the-beer-garden",
-      },
-      {
-        name: "Heyfairies",
-        link: "/heyfairies",
-      },
+      { name: "Ministry of Daru", link: "/ministry-of-daru" },
+      { name: "The Beer Garden", link: "/the-beer-garden" },
+      { name: "Heyfairies", link: "/heyfairies" },
     ],
   },
   {
     name: "Contact Us",
-    link: "/contact",
+    link: "#contact",
   },
   {
     name: "About Us",
-    link: "/about",
+    link: "#about",
   },
+];
+
+const businesses = [
+  { name: "Ministry of Daru", link: "/ministry-of-daru" },
+  { name: "The Beer Garden", link: "/the-beer-garden" },
+  { name: "TLS - The Japanese Language School", link: "/team-languages" },
+  { name: "CB Crown Banquet", link: "/cb-crown-banquet" },
+  { name: "Code with TLS", link: "/code-with-tls" },
+  { name: "Hey Fairies", link: "/heyfairies" },
+  { name: "PromFly", link: "/promfly" },
 ];
 
 const Header = () => {
   const [active, setActive] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredResults, setFilteredResults] = useState<{ name: string; link: string; }[]>([]);
+
+  const placeholders = [
+    "Ministry of Daru",
+    "The Beer Garden",
+    "TLS - The Japanese Language School",
+    "CB Crown Banquet",
+    "Code with TLS",
+    "Hey Fairies",
+    "PromFly",
+  ];
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value.toLowerCase();
+    setSearchQuery(query);
+    setFilteredResults(
+      businesses.filter((business) =>
+        business.name.toLowerCase().includes(query)
+      )
+    );
+  };
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (filteredResults.length > 0) {
+      window.location.href = filteredResults[0].link;
+    }
+  };
 
   return (
     <section className="fixed w-full bg-white shadow-lg z-50 top-0">
@@ -48,7 +79,7 @@ const Header = () => {
         <MobileNav />
       </div>
       <div className="container mx-auto">
-        <div className="py-6  xl:px-12 lg:px-10   text-black w-full text-center mt-10 md:mt-0">
+        <div className="py-6 xl:px-12 lg:px-10 text-black w-full text-center mt-10 md:mt-0">
           <div className="flex md:justify-between items-center justify-center">
             {/* Logo */}
             <div>
@@ -58,6 +89,26 @@ const Header = () => {
                 </h1>
               </Link>
             </div>
+
+            {/* Search Bar with Animation */}
+            <div className="relative">
+              <PlaceholdersAndVanishInput
+                placeholders={placeholders}
+                onChange={handleChange}
+                onSubmit={onSubmit}
+              />
+              {searchQuery && filteredResults.length > 0 && (
+                <ul className="absolute left-0 mt-2 w-full bg-white border shadow-lg rounded-lg text-left">
+                  {filteredResults.map((business, index) => (
+                    <li key={index} className="p-2 hover:bg-gray-200 hover:rounded-lg">
+                      <Link href={business.link}>{business.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {/* Navigation Menu */}
             <div className="hidden md:block">
               <ul className="flex gap-10 text-black relative">
                 {menus.map((menu, index) => (

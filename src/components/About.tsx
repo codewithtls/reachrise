@@ -25,7 +25,7 @@ const heading = [
 export function About() {
   return (
     <>
-      <section className="container mx-auto px-4 my-20 overflow-hidden">
+      <section id="about" className="container mx-auto px-4 my-20 overflow-hidden">
         <div className="flex flex-col items-center justify-center">
           <TypewriterEffect words={heading} />
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10"></div>
