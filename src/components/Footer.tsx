@@ -48,7 +48,7 @@ const websites = [
 ];
 function Footer() {
   return (
-    <div className="relative h-[24rem] overflow-hidden flex items-center justify-center m-0 border-t border-gray-900">
+    <div className="relative h-[20rem] overflow-hidden flex items-center justify-center m-0 border-t border-gray-900 py-10">
       <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center h-full">
         <div className="mb-4">
           <Link href={"/"}>
@@ -66,7 +66,7 @@ function Footer() {
         </div>
         <p className="text-sm md:text-base text-white text-center">
           All Rights Reserved | &copy; {new Date().getFullYear()}{" "}
-          <Link href="/" className="font-semibold text-[--primary-color]">
+          <Link href="/" className="font-semibold ">
             Reach Rise
           </Link>
         </p>
