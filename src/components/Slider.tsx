@@ -4,14 +4,15 @@ import React from "react";
 import { ImagesSlider } from "./ui/images-slider";
 import Link from "next/link";
 
-export function Slider() {
+function Slider() {
   const images = [
     "/images/mod.png",
     "/images/tbg.png",
     "images/tls.png",
   ];
   return (
-    <ImagesSlider className="h-[40rem]" images={images}>
+    <section className="relative">
+      <ImagesSlider className="h-[40rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -36,5 +37,7 @@ export function Slider() {
         </button></Link>
       </motion.div>
     </ImagesSlider>
+    </section>
   );
 }
+export default Slider;

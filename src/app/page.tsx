@@ -1,6 +1,7 @@
-import { About } from "@/components/About";
-import { Cards } from "@/components/Cards";
-import { Slider } from "@/components/Slider";
+import About from "@/components/About";
+import Cards from "@/components/Cards";
+import Footer from "@/components/Footer";
+import Slider from "@/components/Slider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,8 +17,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Slider />
+      <Footer />
       <Cards />
+      <Slider />
       <About />
     </>
   );

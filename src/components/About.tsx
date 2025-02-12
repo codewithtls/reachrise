@@ -22,7 +22,7 @@ const heading = [
   },
 ];
 
-export function About() {
+function About() {
   return (
     <>
       <section id="about" className="container mx-auto px-4 my-20 overflow-hidden">
@@ -169,3 +169,4 @@ const content = [
     image: "/images/tls.png",
   },
 ];
+export default About;
