@@ -14,9 +14,10 @@ const menus = [
     name: "All Businesses",
     link: "#",
     subMenu: [
-      { name: "Team Languages", link: "/team-languages" },
+      { name: "Team Languages", link: "/tls" },
       { name: "Ministry of Daru", link: "/ministry-of-daru" },
       { name: "The Beer Garden", link: "/the-beer-garden" },
+      { name: "CB Crown Banquet", link: "/cb-crown-banquet" },
       { name: "Heyfairies", link: "/heyfairies" },
     ],
   },

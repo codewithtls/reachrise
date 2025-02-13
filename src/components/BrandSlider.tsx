@@ -11,14 +11,14 @@ const BrandSlider = () => {
     { id: 3, name: "TLS -The Japanese Language School", url: "https://www.teamlanguages.com/", image: "/images/icons/tls.png" },
     { id: 4, name: "CB Crown Banquet", url: "https://crownbanquetnoida.com/", image: "/images/icons/cb.png" },
     { id: 5, name: "Code With TLS", url: "https://www.codewithtls.com/", image: "/images/icons/cwt.png" },
-    { id: 6, name: "PromFly", url: "https://www.promfly.com/", image: "/images/icons/pf.png" },
+    { id: 6, name: "PromFly", url: "https://www.promfly.com/", image: "/images/icons/1.png" },
     { id: 7, name: "HeyFairies", url: "https://www.heyfairies.com/", image: "/images/icons/hf.png" },
     { id: 8, name: "Noida Urban", url: "https://www.noidaurban.com/", image: "/images/icons/noida.png" },
     { id: 9, name: "Indus Thrills", url: "https://www.industhrills.com/", image: "/images/icons/indus.png" },
     { id: 10, name: "What Goes Hunt", url: "https://www.whatgoeshunt.com/", image: "/images/icons/hunt.png" },
   ];
 
-  const duplicatedBrands = [...brands, ...brands]; // Loop for infinite scrolling
+  const duplicatedBrands = [...brands, ...brands];
   const heading = [
     { text: "Discover" },
     { text: "Our" },
