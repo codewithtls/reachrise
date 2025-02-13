@@ -1,7 +1,7 @@
 import About from "@/components/About";
+import BrandSlider from "@/components/BrandSlider";
+import BreadCrumbHome from "@/components/BreadCrumbHome";
 import Cards from "@/components/Cards";
-import Footer from "@/components/Footer";
-import Slider from "@/components/Slider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Footer />
+      <BreadCrumbHome />
       <Cards />
-      <Slider />
       <About />
+      <BrandSlider />
     </>
   );
 }

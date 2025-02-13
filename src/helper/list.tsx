@@ -18,7 +18,7 @@ const list=[
     },
     {
         id:3,
-        title:"Cb Crown Banquet",
+        title:"CB Crown Banquet",
         description:"From exquisite decor to seamless event management, we ensure every moment is cherished and celebrated in style.",
         image:"/images/cb.png",
         more:"/cb-crown-banquet",

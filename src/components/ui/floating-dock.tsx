@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
@@ -64,13 +63,14 @@ const FloatingDockMobile = ({
               >
                 <Link
                   href={item.href}
+                  target="_blank"
                   key={item.title}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </Link>
               </motion.div>
-            ))}
+            ))} 
           </motion.div>
         )}
       </AnimatePresence>
@@ -93,18 +93,20 @@ const FloatingDockDesktop = ({
 }) => {
   let mouseX = useMotionValue(Infinity);
   return (
-    <motion.div
-      onMouseMove={(e) => mouseX.set(e.pageX)}
-      onMouseLeave={() => mouseX.set(Infinity)}
-      className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
-        className
-      )}
-    >
-      {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} {...item} />
-      ))}
-    </motion.div>
+    <div className="flex justify-center w-full">
+      <motion.div
+        onMouseMove={(e) => mouseX.set(e.pageX)}
+        onMouseLeave={() => mouseX.set(Infinity)}
+        className={cn(
+          "mx-auto flex md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+          className
+        )}
+      >
+        {items.map((item) => (
+          <IconContainer mouseX={mouseX} key={item.title} {...item} />
+        ))}
+      </motion.div>
+    </div>
   );
 };
 

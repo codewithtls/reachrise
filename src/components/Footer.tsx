@@ -48,7 +48,7 @@ const websites = [
 ];
 function Footer() {
   return (
-    <div className="relative h-[60vh] overflow-hidden flex items-center justify-center m-0 border-t border-gray-900 py-10">
+    <div className="relative h-[40vh] overflow-hidden flex items-center justify-center m-0 border-t border-gray-900 py-10">
       <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center h-full">
         <div className="mb-4">
           <Link href={"/"}>
