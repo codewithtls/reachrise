@@ -4,7 +4,6 @@ import { FocusCards } from "@/components/ui/focus-cards";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   BsFacebook,
-  BsGoogle,
   BsInstagram,
   BsLinkedin,
   BsPinterest,

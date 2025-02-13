@@ -1,30 +1,30 @@
 import Breadcrumb from "@/components/Breadcrumb";
-import TheBeerGarden from "@/components/TheBeerGarden";
+import TeamLanguages from "@/components/TeamLanguages";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "The Beer Garden Noida | Best Rooftop Restro-Bar in Noida",
-  description:"Experience the best garden-themed rooftop restaurant in Noida. Perfect for corporate parties, romantic dates, and high-energy nightlife.",
+  title: "Best Japanese Language School in Delhi | TLS",
+  description:"Learn Japanese with TLS, the top Japanese language institute in Delhi. Get expert training, online/offline classes, and Japan student visa assistance. Call +918700956038.",
   keywords:
     "Reach Rise, best services in education, language learning, hospitality, entertainment, digital marketing, Japanese language school, fine dining, rooftop café, tech courses, banquet hall, customized mobile covers.",
   alternates: {
     canonical: "https://www.reachrise.com/the-beer-garden",
   },
 }
-function BeerGardenPage() {
+function TeamLanguagesPage() {
   return (
     <div>
       <div>
         <Breadcrumb
-          title="The Beer Garden"
-          tagline="The Best Rooftop Café Experience"
-          image="/images/tbg.png"
+          title="TLS - The Japanese Language School"
+          tagline="The Best Japanese Language School"
+          image="/images/tls.png"
         />
       </div>
-      <TheBeerGarden />
+      <TeamLanguages />
     </div>
   );
 }
 
-export default BeerGardenPage;
+export default TeamLanguagesPage;
