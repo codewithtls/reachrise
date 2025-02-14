@@ -11,6 +11,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import Image from "next/image";
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
 function TeamLanguages() {
   const cards = [
     {
@@ -106,6 +107,30 @@ function TeamLanguages() {
       ),
       href: "https://g.co/kgs/HJ5fMEZ",
     },
+  ];
+  const testimonials = [
+    {
+      quote:
+        "TLS helped me clear my JLPT N3 exam with confidence! The structured approach and supportive teachers made all the difference.",
+      name: "Ankit S.",
+      designation: "Student at TLS - The Japanese Language School",
+      src: "/images/tls/tls-2.webp",
+    },
+    {
+      quote:
+        "The student visa assistance program was a game-changer. I am now studying in Tokyo, all thanks to TLS!",
+      name: "Priya M.",
+      designation: "Student at TLS - The Japanese Language School",
+      src: "/images/tls/tls-3.webp",
+    },
+    {
+      quote:
+        "Learning Japanese at TLS was the best decision! The online classes were super interactive, and I feel ready to work in a Japanese company.",
+      name: "Rahul K.",
+      designation: "Student at TLS - The Japanese Language School",
+      src: "/images/tls/tls-1.webp",
+    },
+    
   ];
   return (
     <section>
@@ -220,9 +245,17 @@ function TeamLanguages() {
           immerse themselves in Japanese traditions.
         </p>
         <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
-        Join TLS & Start Your Japanese Learning Journey Today!
+          Success Stories – Hear from Our Students!
         </h2>
-        <p>Learning Japanese opens a world of opportunities. Whether you’re aiming for career growth, international education, or cultural enrichment, TLS is the best place to start.</p>
+        <AnimatedTestimonials testimonials={testimonials} />
+        <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
+          Join TLS & Start Your Japanese Learning Journey Today!
+        </h2>
+        <p>
+          Learning Japanese opens a world of opportunities. Whether you’re
+          aiming for career growth, international education, or cultural
+          enrichment, TLS is the best place to start.
+        </p>
         <ul className="text-lg mb-2 text-gray-700">
           <li>
             <strong>📍 Address:</strong>{" "}
@@ -231,7 +264,8 @@ function TeamLanguages() {
               className="font-semibold hover:text-[color:--primary-color]"
               target="_blank"
             >
-              2/81-82, 2nd Floor, Lalita Park, Gali No - 2, Laxmi Nagar, New Delhi - 110092
+              2/81-82, 2nd Floor, Lalita Park, Gali No - 2, Laxmi Nagar, New
+              Delhi - 110092
             </a>
           </li>
           <li>
