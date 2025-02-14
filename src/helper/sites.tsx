@@ -1,11 +1,10 @@
-const list=[
+const sites=[
     {
         id:1,
         title:"Ministry of Daru",
         description:"With its lively atmosphere and great music, it’s easy to see why it’s one of the Best Ambience Restaurants in Noida.",
         image:"/images/mod.png",
         more:"/ministry-of-daru",
-        icon:"/images/icons/mod.png",
         visit:"https://www.ministryofdaru.com/"
     },
     {
@@ -58,11 +57,11 @@ const list=[
     },    
     {
         id:8,
-        title:"Job Portal",
-        description:"Hire 365",
+        title:"Job Portals",
+        description:"Hire 365, Rojgar Today and AapKi Jobs",
         image:"/images/hire.png",
-        more:"/job-portal",
-        visit:"https://www.hire365.in/"
+        more:"/job-portals",
+        visit:"/job-portals"
     },    
     {
         id:9,
@@ -70,23 +69,7 @@ const list=[
         description:"Our Blogging sites.",
         image:"/images/indus.png",
         more:"/blogging-sites",
-        visit:"https://www.heyfairies.com/"
+        visit:"/blogging-sites"
     },
-    // {
-    //     id:8,
-    //     title:"Noida Urban",
-    //     description:"Discover Noida like never before with NoidaUrban.com! Your ultimate guide to the city’s vibrant lifestyle, latest news, and community updates.",
-    //     image:"/images/noida.png",
-    //     more:"/noida-urban",
-    //     visit:"https://noidaurban.vercel.app/"
-    // },
-    // {
-    //     id:9,
-    //     title:"Indus Thrills",
-    //     description:"Get all the updates regarding travel and destination, and check out our latest blogs | Indus Thrills.",
-    //     image:"/images/indus.png",
-    //     more:"/indus-thrills",
-    //     visit:"https://industhrills.com/"
-    // },
 ];
-export default list;
+export default sites;

@@ -3,14 +3,14 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
-import sites from "@/helper/sites";
+import jobPortals from "@/helper/jobPortals";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-function Cards() {
+function JobPortals() {
   return (
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        {sites.map((item) => (
+        {jobPortals.map((item) => (
           <CardContainer key={item.id} className="inter-var">
             <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto rounded-xl p-6 border min-h-[480px] flex flex-col">
               <CardItem
@@ -33,8 +33,8 @@ function Cards() {
                 <Link href={item.more}>
                   <Image
                     src={item.image}
-                    height={400} 
-                    width={400} 
+                    height={400} // Adjust height for responsiveness
+                    width={400} // Maintain aspect ratio
                     className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
                     alt={item.title}
                   />
@@ -66,4 +66,4 @@ function Cards() {
     </div>
   );
 }
-export default Cards;
+export default JobPortals;

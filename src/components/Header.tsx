@@ -18,7 +18,9 @@ const menus = [
       { name: "Ministry of Daru", link: "/ministry-of-daru" },
       { name: "The Beer Garden", link: "/the-beer-garden" },
       { name: "CB Crown Banquet", link: "/cb-crown-banquet" },
-      { name: "Heyfairies", link: "/heyfairies" },
+      { name: "Code with TLS", link: "/code-with-tls" },
+      { name: "HeyFairies", link: "/heyfairies" },
+      { name: "PromFly", link: "/promfly" },
     ],
   },
   {

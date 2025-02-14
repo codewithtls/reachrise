@@ -15,9 +15,14 @@ const MobileMenu = () => {
     open: { opacity: 1, height: "auto", transition: { duration: 0.3 } },
     closed: { opacity: 0, height: 0, transition: { duration: 0.3 } },
   };
-  const Services = [
-    { name: "Websites Design and Redesign", url: "/services/website-development" },
-    { name: "Social Media Management", url: "/services/social-media-management" },]
+  const AllBusinesses = [
+    { name: "Ministry of Daru", url: "/ministry-of-daru" },
+  { name: "The Beer Garden", url: "/the-beer-garden" },
+  { name: "TLS - The Japanese Language School", url: "/team-languages" },
+  { name: "CB Crown Banquet", url: "/cb-crown-banquet" },
+  { name: "Code with TLS", url: "/code-with-tls" },
+  { name: "Hey Fairies", url: "/heyfairies" },
+  { name: "PromFly", url: "/promfly" },]
   return (
     <nav className="bg-white z-60 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +103,7 @@ const MobileMenu = () => {
               onClick={toggleDropdown}
               className="text-gray-800 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-base font-medium w-full text-left flex justify-between items-center"
             >
-              Services
+              All Businesses
               {dropdownOpen ? (
                 <svg
                   className="w-5 h-5 text-gray-800"
@@ -135,14 +140,14 @@ const MobileMenu = () => {
                   animate="open"
                   exit="closed"
                 >
-                  {Services.map((service) => (
+                  {AllBusinesses.map((business) => (
                     <Link
                       onClick={toggleMenu}
-                      href={service.url}
-                      key={service.name}
+                      href={business.url}
+                      key={business.name}
                       className="text-gray-800 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      {service.name}
+                      {business.name}
                     </Link>
                   ))}
                 </motion.div>
@@ -152,32 +157,18 @@ const MobileMenu = () => {
 
           <Link
             onClick={toggleMenu}
-            href="/blogs"
+            href="#contact"
             className="text-gray-800 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
           >
-            Blogs
+            Contact Us
           </Link>
 
           <Link
             onClick={toggleMenu}
-            href="/faq"
+            href="#about"
             className="text-gray-800 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
           >
-            FAQs
-          </Link>
-          <Link
-            onClick={toggleMenu}
-            href="/about"
-            className="text-gray-800 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
-          >
-            About
-          </Link>
-          <Link
-            onClick={toggleMenu}
-            href="/contact"
-            className="text-gray-800 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
+            About Us
           </Link>
         </div>
       </div>
