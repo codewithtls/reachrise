@@ -11,6 +11,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import Image from "next/image";
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
 function Promfly() {
   const cards = [
     {
@@ -104,6 +105,29 @@ function Promfly() {
         />
       ),
       href: "https://g.co/kgs/VKcMkPh",
+    },
+  ];
+  const testimonials = [
+    {
+      quote:
+        "PromFly completely transformed our online presence! Our organic traffic doubled within months.",
+      name: "Amit Chaudhary",
+      designation: "Customer -PromFly",
+      src: "/images/promfly/seo.png",
+    },
+    {
+      quote:
+        "Their social media campaigns helped us generate quality leads and increase engagement!",
+      name: "Prachi",
+      designation: "Customer -PromFly",
+      src: "/images/promfly/sm-ads.png",
+    },
+    {
+      quote:
+        "Great PPC strategies! We saw a significant improvement in ad performance and ROI.",
+      name: "Prapti",
+      designation: "Customer -PromFly",
+      src: "/images/promfly/google.png",
     },
   ];
   return (
@@ -225,9 +249,12 @@ function Promfly() {
           <li>🔹 Keyword & traffic analytics</li>
           <li>💡 Actionable recommendations</li>
         </ul>
-
         <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
-        Get Started with PromFly Today!
+          What Our Clients Say
+        </h2>
+        <AnimatedTestimonials testimonials={testimonials} />
+        <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
+          Get Started with PromFly Today!
         </h2>
         <ul className="text-lg mb-2 text-gray-700">
           <li>

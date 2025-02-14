@@ -12,6 +12,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import Image from "next/image";
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
 function CBCrownBanquet() {
   const cards = [
     {
@@ -114,6 +115,30 @@ function CBCrownBanquet() {
       href: "https://g.co/kgs/qQZnFM6",
     },
   ];
+  const testimonials = [
+    {
+      quote:
+        "Amazing banquet hall with top-notch service! Hosted my anniversary party here, and everything was just perfect. Highly recommend!",
+      name: "Nikita Garg",
+      designation: "",
+      src: "/images/cb/cb-2.jpg",
+    },
+    {
+      quote:
+        "Spacious, beautifully decorated, and excellent catering! One of the best venues for corporate events in Noida.",
+      name: "Arjun Sharma",
+      designation: "",
+      src: "/images/cb/cb-3.jpg",
+    },
+    {
+      quote:
+        "The food was delicious, the service was flawless, and the decor was beyond expectations! Perfect place for grand celebrations.",
+      name: "Neha Goyal",
+      designation: "",
+      src: "/images/cb/cb-1.jpg",
+    },
+    
+  ];
   return (
     <section>
       <div className="container mx-auto px-4 my-10 overflow-hidden">
@@ -146,18 +171,22 @@ function CBCrownBanquet() {
 
         <ul className="text-lg mb-2 text-gray-700 pl-4 list-disc">
           <li>
-            <strong>Spacious & Luxurious Venue –</strong> Conveniently located near Electronic
-            City Metro Station
+            <strong>Spacious & Luxurious Venue –</strong> Conveniently located
+            near Electronic City Metro Station
           </li>
           <li>Customized Decor & Unlimited Food Packages</li>
           <li>
-            <strong>Ideal for All Events –</strong> Weddings, corporate functions, birthday
-            parties, baby showers
+            <strong>Ideal for All Events –</strong> Weddings, corporate
+            functions, birthday parties, baby showers
           </li>
           <li>Excellent Customer Service & Event Planning Assistance</li>
         </ul>
         <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
-        Book CB Crown Banquet for Your Event Today!
+        Customer Reviews – What People Say About Us
+        </h2>
+        <AnimatedTestimonials testimonials={testimonials} />
+        <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
+          Book CB Crown Banquet for Your Event Today!
         </h2>
         <ul className="text-lg mb-2 text-gray-700">
           <li>
@@ -185,7 +214,7 @@ function CBCrownBanquet() {
               href="mailto:info@crownbanquetnoida.com"
               className="font-semibold hover:text-[color:--primary-color]"
             >
-            info@crownbanquetnoida.com
+              info@crownbanquetnoida.com
             </a>
           </li>
           <li>

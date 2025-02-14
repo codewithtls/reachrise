@@ -11,6 +11,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import Image from "next/image";
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
 function HeyFairies() {
   const cards = [
     {
@@ -97,6 +98,26 @@ function HeyFairies() {
         />
       ),
       href: "https://maps.app.goo.gl/bFGn364qXqLa9PnJ9",
+    },
+  ];
+  const testimonials = [
+    {
+      quote:"Absolutely love my customized mobile cover from HeyFairies! The quality is amazing, and the print is super sharp!",
+      name: "Abhi Saxena",
+      designation:"Customer -HeyFairies",
+      src: "/images/hf/hf-4.webp",
+    },
+    {
+      quote:"Got a personalized phone case with my name on it, and it looks fantastic! Fast delivery too!",
+      name: "Dharamraj",
+      designation:"Customer -HeyFairies",
+      src: "/images/hf/hf-5.webp",
+    },
+    {
+      quote:"Perfect place for trendy and unique mobile covers! Love the variety and quality.",
+      name: "Rajat Khurana",
+      designation:"Customer -HeyFairies",
+      src: "/images/hf/hf-7.webp",
     },
   ];
   return (
@@ -190,9 +211,12 @@ function HeyFairies() {
           <li>📞 Dedicated customer support for quick assistance</li>
           <li>🌟 1000+ happy customers & glowing reviews!</li>
         </ul>
-        
         <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
-        Order Your Custom Mobile Cover Today!
+          Student Reviews – Success Stories
+        </h2>
+        <AnimatedTestimonials testimonials={testimonials} />
+        <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
+          Order Your Custom Mobile Cover Today!
         </h2>
         <ul className="text-lg mb-2 text-gray-700">
           <li>

@@ -11,6 +11,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import Image from "next/image";
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
 function CodeWithTLS() {
   const cards = [
     {
@@ -94,6 +95,26 @@ function CodeWithTLS() {
       href: "https://g.co/kgs/vKthBv2",
     },
   ];
+  const testimonials = [
+    {
+      quote:"Code with TLS changed my life! I landed a job at a top tech company within 3 months of completing the Full-Stack Web Development course!",
+      name: "Abhishek Kumar",
+      designation:"Student at Code With TLS",
+      src: "/images/cwt/app.jpg",
+    },
+    {
+      quote:"The best coding institute! The live projects and career guidance really helped me get placed as a software developer. Highly recommended!",
+      name: "Sneha Malik",
+      designation:"Student at Code With TLS",
+      src: "/images/cwt/mern.jpg",
+    },
+    {
+      quote:"Practical, industry-focused courses with expert mentorship. I now have a strong portfolio and job-ready skills!",
+      name: "Jatin Singh",
+      designation:"Student at Code With TLS",
+      src: "/images/cwt/dm.jpg",
+    },
+  ]
   return (
     <section>
       <div className="container mx-auto px-4 my-10 overflow-hidden">
@@ -178,20 +199,23 @@ function CodeWithTLS() {
           <li>🚀 Portfolio-building with real projects</li>
           <li>🤝 Internship & job opportunities with partner companies</li>
         </ul>
-        
-
         <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
-        Start Your Coding Journey Today!
+        Student Reviews – Success Stories
+        </h2>
+        <AnimatedTestimonials testimonials={testimonials} />
+        <h2 className="bg-black text-lg text-white rounded-full w-fit px-4 py-1 my-4">
+          Start Your Coding Journey Today!
         </h2>
         <ul className="text-lg mb-2 text-gray-700">
-        <li>
+          <li>
             <strong>📍 Address:</strong>{" "}
             <a
               href="https://www.google.com/maps/place/CODE+with+TLS/@28.6298777,77.2728251,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5fb766bc95:0x48127b414b928184!8m2!3d28.629873!4d77.2754!16s%2Fg%2F11lnjd1p75?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
               className="font-semibold hover:text-[color:--primary-color]"
               target="_blank"
             >
-              2/81-82, Ground Floor, Lalita Park, Gali No - 2, Laxmi Nagar, New Delhi - 110092
+              2/81-82, Ground Floor, Lalita Park, Gali No - 2, Laxmi Nagar, New
+              Delhi - 110092
             </a>
           </li>
           <li>
