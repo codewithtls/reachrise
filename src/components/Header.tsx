@@ -83,7 +83,7 @@ const Header = () => {
       </div>
       <div className="container mx-auto">
         <div className="py-6 xl:px-12 lg:px-10 text-black w-full text-center mt-10 md:mt-0">
-          <div className="flex md:justify-between items-center justify-center">
+          <div className="flex md:justify-between items-center justify-center gap-4 md:gap-0">
             {/* Logo */}
             <div>
               <Link href={"/"}>
