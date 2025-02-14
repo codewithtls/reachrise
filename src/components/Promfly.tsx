@@ -6,7 +6,6 @@ import {
   BsFacebook,
   BsInstagram,
   BsLinkedin,
-  BsPinterest,
   BsQuora,
   BsTwitter,
   BsYoutube,

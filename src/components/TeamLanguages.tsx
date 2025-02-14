@@ -8,7 +8,6 @@ import {
   BsLinkedin,
   BsPinterest,
   BsQuora,
-  BsTwitter,
   BsYoutube,
 } from "react-icons/bs";
 import Image from "next/image";
